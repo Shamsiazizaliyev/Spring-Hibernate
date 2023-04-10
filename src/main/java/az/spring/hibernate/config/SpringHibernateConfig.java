@@ -26,7 +26,7 @@ public class SpringHibernateConfig {
 
 
     @Bean
-    public DataSource dataSource() {
+    public DataSource dataSource(Environment environment) {
 
 
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
